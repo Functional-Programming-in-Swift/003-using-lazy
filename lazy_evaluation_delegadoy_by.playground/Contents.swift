@@ -18,5 +18,6 @@ class Cart {
 }
 
 let cart = Cart()
-
+cart.checkout()
+cart.checkout()
 
