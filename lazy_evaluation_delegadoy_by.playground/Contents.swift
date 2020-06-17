@@ -13,3 +13,6 @@ class Cart {
         return ["key":"calue"]
     }
 }
+
+let cart = Cart()
+
