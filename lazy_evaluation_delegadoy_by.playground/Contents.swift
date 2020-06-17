@@ -1,7 +1,10 @@
 import UIKit
 
 class Cart {
-    let paymentConfig = Cart.loadAndPreparePaymentConfig()
+    var paymentConfig: [String : String] {
+        return Cart.loadAndPreparePaymentConfig()
+    }
+    
     func checkout() {
         if paymentConfig["type"] == "card" {
             // Do something
@@ -15,4 +18,5 @@ class Cart {
 }
 
 let cart = Cart()
+
 
